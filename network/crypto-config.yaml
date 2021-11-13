@@ -1,0 +1,14 @@
+OrdererOrgs:
+  - Name: Orderer
+    Domain: example.com
+    Specs:
+      - Hostname: orderer
+      
+PeerOrgs:
+  - Name: Org1
+    Domain: org1.example.com
+    Template: # peer 개수
+      Count: 1
+
+    Users: # 기등록 유저 + 관리자1 인증서 + 프라이빗 키
+      Count: 1
