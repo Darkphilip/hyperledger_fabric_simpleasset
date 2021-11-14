@@ -15,7 +15,7 @@ services:
       - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
       - FABRIC_CA_SERVER_CA_NAME=ca.example.com
       - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.org1.example.com-cert.pem
-      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/4239aa0dcd76daeeb8ba0cda701851d14504d31aad1b2ddddbac6a57365e497c_sk # crypto-config/peerOrganizations/ca
+      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/${CA1 SECREATE KEY} # crypto-config/peerOrganizations/ca
     ports: # 포트 포워딩
       - "7054:7054"  # CA가 사용하는 PORT번호
     command: sh -c 'fabric-ca-server start -b admin:adminpw' # 컨테이너 생성 후 수행 명령
